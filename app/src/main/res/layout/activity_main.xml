@@ -10,4 +10,64 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        android:textAllCaps="false"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/test3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/test4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/test5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/test6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/test7"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="7"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/test8"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="8"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/test9"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="9"
+            android:textAllCaps="false"/>
+    </LinearLayout>
 </LinearLayout>

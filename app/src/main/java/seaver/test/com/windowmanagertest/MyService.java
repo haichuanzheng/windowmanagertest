@@ -77,8 +77,10 @@ public class MyService extends Service {
         super.onCreate();
         windowManager=(WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         layoutParams=new WindowManager.LayoutParams();
-        layoutParams.type=WindowManager.LayoutParams.TYPE_SYSTEM_ERROR;
-        layoutParams.flags=WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN;
+        layoutParams.type=WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+        //layoutParams.flags=WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN;
+        layoutParams.height=500;
+        layoutParams.width=600;
         view= LayoutInflater.from(getBaseContext()).inflate(R.layout.test_layout,null);
         Log.d("MainActivity","在onCreate的View的id"+view.getId());
         windowManager.addView(view,layoutParams);
@@ -114,15 +116,12 @@ public class MyService extends Service {
                             timer=new Timer();
                             timer.schedule(task,500, 500);
                         }
-
                         break;
                     case MotionEvent.ACTION_MOVE: //手指移动（从手指按下到抬起 move多次执行）
                         break;
                     case MotionEvent.ACTION_UP: //手指抬起
                         break;
                 }
-
-
                 return false;
             }
         });
