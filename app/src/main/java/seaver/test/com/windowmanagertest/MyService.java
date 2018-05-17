@@ -101,7 +101,6 @@ public class MyService extends Service {
                             Log.d("MainActivity","确认来过暂停这里啊");
                             is=false;
                             timer.cancel();
-
                         }else {
                             Log.d("MainActivity","确认来过开始这里啊");
                             task=new TimerTask() {
